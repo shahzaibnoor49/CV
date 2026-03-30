@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | Personal CV</title>
+
+    <!-- Google Fonts (readable, modern) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Sticky navigation bar (fixed at top) -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Go to Home">Portfolio</a>
+
+        <!-- Required navigation tabs & exact link text -->
+        <nav class="nav-menu" aria-label="Primary">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#about">About Me</a>
+          <a class="nav-link" href="#cv">CV</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#gallery">Picture Gallery</a>
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home / Intro -->
+      <section id="home" class="section hero">
+        <div class="container hero-inner">
+          <div class="headshot-wrap">
+            <!-- Replace with your image (keep file name consistent or update src) -->
+            <img
+              class="headshot"
+              src="images/headshot.png"
+              alt="Professional headshot of Shahzaib Noor"
+            />
+          </div>
+
+          <div class="hero-text">
+            <!-- Replace placeholders with your details -->
+            <h1 class="hero-name">Shahzaib Noor</h1>
+            <p class="hero-tagline">Aspiring Web Developer | Software Engineering Student at University of Lahore</p>
+
+            <p class="hero-summary">
+              I build clean, user-focused websites and projects that combine solid fundamentals with
+              practical creativity.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#projects">Explore Projects</a>
+              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-lead">
+            Hi, I'm Shahzaib Noor, a Software Engineering student passionate about building web experiences.
+            I enjoy turning ideas into responsive interfaces, improving usability, and learning
+            new technologies through hands-on projects. My goal is to grow into a developer
+            who delivers reliable products and collaborates effectively with teams.
+          </p>
+        </div>
+      </section>
+
+      <!-- CV (Education, Skills, Experience, Certifications) -->
+      <section id="cv" class="section cv">
+        <div class="container">
+          <h2 class="section-title">CV</h2>
+
+          <div class="cv-grid">
+            <!-- Education -->
+            <article class="info-card">
+              <h3>Education</h3>
+              <p class="muted">
+                <strong>Software Engineering</strong> • <strong>University of Lahore</strong>
+              </p>
+              <p class="muted">Expected Graduation Year: <strong>YYYY</strong></p>
+              <h4 class="card-subtitle">Core / Favorite Subjects</h4>
+              <ul class="list">
+                <li>Data Structures & Algorithms</li>
+                <li>Database Systems</li>
+                <li>Web Development</li>
+                <li>Computer Networks</li>
+              </ul>
+            </article>
+
+            <!-- Skills -->
+            <article class="info-card">
+              <h3>Skills</h3>
+
+              <div class="skills-wrap">
+                <div class="skills-column">
+                  <h4>Technical Skills</h4>
+                  <div class="chip-grid" role="list" aria-label="Technical skills">
+                    <span class="chip" role="listitem">HTML</span>
+                    <span class="chip" role="listitem">CSS</span>
+                    <span class="chip" role="listitem">C++</span>
+                    <span class="chip" role="listitem">Python</span>
+                    <span class="chip" role="listitem">Git & GitHub</span>
+                    <span class="chip" role="listitem">Problem Solving</span>
+                  </div>
+                </div>
+
+                <div class="skills-column">
+                  <h4>Soft Skills</h4>
+                  <div class="chip-grid" role="list" aria-label="Soft skills">
+                    <span class="chip" role="listitem">Team Leadership</span>
+                    <span class="chip" role="listitem">Communication</span>
+                    <span class="chip" role="listitem">Problem Solving</span>
+                    <span class="chip" role="listitem">Time Management</span>
+                    <span class="chip" role="listitem">Collaboration</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Experience & Volunteering -->
+            <article class="info-card">
+              <h3>Experience &amp; Volunteering</h3>
+              <div class="experience-list">
+                <div class="experience-item">
+                  <p class="experience-title"><strong>Role Name</strong> - University Society</p>
+                  <p class="experience-meta"><span class="pill">MM YYYY - MM YYYY</span></p>
+                  <p class="experience-desc">
+                    Helped plan events, coordinated with teammates, and supported production/media tasks.
+                  </p>
+                </div>
+                <div class="experience-item">
+                  <p class="experience-title"><strong>Internship Title</strong> - Company/Org</p>
+                  <p class="experience-meta"><span class="pill">MM YYYY - MM YYYY</span></p>
+                  <p class="experience-desc">
+                    Worked on real-world tasks, improving features and learning professional development workflows.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Certifications & Achievements -->
+            <article class="info-card">
+              <h3>Certifications &amp; Achievements</h3>
+              <ul class="list">
+                <li>Coursera: Web Design for Everybody (or your course)</li>
+                <li>Udemy: The Complete Python/HTML/CSS Course (or your course)</li>
+                <li>Hackathon / Competition: Team project and award (Year)</li>
+                <li>Academic Achievement: Dean's List / Merit (Year)</li>
+              </ul>
+              <p class="muted">
+                Replace these items with your real certifications and achievements.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Portfolio (most important section) -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Projects Portfolio</h2>
+          <p class="section-lead">
+            These are a few projects I've built. Each card shows the title, a short description, and the tools used.
+          </p>
+
+          <div class="project-grid" aria-label="Project cards">
+            <article class="project-card">
+              <img
+                class="project-image"
+                src="images/projects/project-1.png"
+                alt="Pet Heaven project preview"
+              />
+              <h3>Pet Heaven</h3>
+              <p class="project-desc">
+                Designed a pet-focused website where users can explore pet profiles, learn about care tips, and discover adoption-related information.
+              </p>
+              <p class="tools-label">Tools used</p>
+              <div class="tools">
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">Flexbox</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                class="project-image"
+                src="images/projects/project-2.png"
+                alt="Pet Heaven projects page preview"
+              />
+              <h3>Pet Heaven - Breeds & Pages</h3>
+              <p class="project-desc">
+                Built reusable sections for a pet-themed website, using layout grids and clean typography for an engaging user experience.
+              </p>
+              <p class="tools-label">Tools used</p>
+              <div class="tools">
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">Responsive Layout</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                class="project-image"
+                src="images/projects/project-3.png"
+                alt="Pet Heaven gallery and contact preview"
+              />
+              <h3>Pet Heaven - Gallery & Contact</h3>
+              <p class="project-desc">
+                Created a simple picture gallery and contact area to showcase work, connect with visitors, and improve overall website usability.
+              </p>
+              <p class="tools-label">Tools used</p>
+              <div class="tools">
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">Flexbox</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Picture Gallery -->
+      <section id="gallery" class="section">
+        <div class="container">
+          <h2 class="section-title">Picture Gallery</h2>
+          <p class="section-lead">
+            Replace these placeholders with your project photos, event images, or screenshots.
+          </p>
+
+          <div class="gallery-grid" aria-label="Image gallery">
+            <figure class="gallery-item">
+              <img src="images/gallery/gallery-1.png" alt="Pet gallery image 1" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/gallery-2.png" alt="Pet gallery image 2" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/gallery/gallery-3.png" alt="Pet gallery image 3" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact & Social Links -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section-title">Contact Us</h2>
+
+          <div class="contact-grid">
+            <div class="info-card contact-card">
+              <h3>Get in touch</h3>
+
+              <p class="muted">
+                For collaboration, internships, or project inquiries, feel free to email me:
+              </p>
+
+              <p class="contact-email">
+                <a class="btn btn-secondary" href="mailto:shahzaibnoorjoyia@gmail.com">shahzaibnoorjoyia@gmail.com</a>
+              </p>
+
+              <div class="social-row" aria-label="Social links">
+                <a class="social-link" href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noreferrer">
+                  <!-- Inline SVG icon (no external libraries needed) -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6C1.11 6 0 4.88 0 3.5C0 2.12 1.11 1 2.49 1C3.87 1 4.98 2.12 4.98 3.5ZM0.5 22H4.48V7H0.5V22ZM8.5 7H12.33V9.02H12.39C12.93 8.01 14.12 6.82 16.16 6.82C20.31 6.82 21.5 9.5 21.5 13.2V22H17.52V13.92C17.52 11.97 17.48 9.46 14.98 9.46C12.44 9.46 12.06 11.46 12.06 13.78V22H8.5V7Z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+
+                <a class="social-link" href="https://github.com/your-username" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      d="M12 0.5C5.73 0.5 0.75 5.48 0.75 11.75C0.75 16.84 4.14 21.13 8.74 22.45C9.34 22.56 9.56 22.2 9.56 21.88C9.56 21.59 9.55 20.78 9.55 19.77C6.76 20.38 6.14 18.45 6.14 18.45C5.68 17.32 5.04 16.99 5.04 16.99C4.13 16.38 5.11 16.39 5.11 16.39C6.1 16.47 6.59 17.45 6.59 17.45C7.47 19 8.93 18.55 9.54 18.25C9.63 17.57 9.9 17.09 10.21 16.81C7.99 16.56 5.63 15.65 5.63 11.5C5.63 10.35 6.03 9.39 6.71 8.62C6.61 8.36 6.26 7.24 6.81 5.79C6.81 5.79 7.66 5.52 9.54 6.79C10.35 6.56 11.23 6.45 12.1 6.45C12.98 6.45 13.86 6.56 14.67 6.79C16.55 5.52 17.4 5.79 17.4 5.79C17.95 7.24 17.6 8.36 17.5 8.62C18.18 9.39 18.58 10.35 18.58 11.5C18.58 15.66 16.22 16.56 13.99 16.81C14.37 17.14 14.71 17.8 14.71 18.74C14.71 20.1 14.7 21.21 14.7 21.88C14.7 22.2 14.92 22.56 15.52 22.45C20.11 21.12 23.5 16.84 23.5 11.75C23.5 5.48 18.52 0.5 12 0.5Z"
+                    />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="info-card contact-card">
+              <h3>CV Download (Bonus)</h3>
+              <p class="muted">
+                Upload your real PDF resume and rename it to <strong>cv.pdf</strong> (or update the link).
+              </p>
+              <a class="btn" href="cv.pdf" download>Download CV</a>
+
+              <div class="contact-note">
+                <p class="muted">
+                  Tip: Add your location and availability here if you want (optional).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">(c) <span>2026</span> Your Name. Built with pure HTML &amp; CSS.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
